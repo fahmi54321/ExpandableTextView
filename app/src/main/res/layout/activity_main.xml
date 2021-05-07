@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            android:layout_width="match_parent"
+            android:id="@+id/expandable_text_view"
+            android:layout_height="wrap_content"
+            app:maxCollapsedLines="4"
+            app:animDuration="200">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/expandable_text"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"></TextView>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/expand_collapse"
+                android:layout_gravity="right|bottom"></ImageButton>
+
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
+    </ScrollView>
+
+</LinearLayout>
